@@ -1,6 +1,7 @@
 :root{
     --Pale-blue: hsl(209, 100%,61%);
     --gray: hsl(0, 0%, 77%);
+    --border: hsl(209, 100%, 61%);
 }
 
 body{
@@ -9,16 +10,6 @@ body{
     font-family: Roboto;
 }
 
-/* .wrapper{
-    background-image: url('../assets/images/home/O9FG4R0\ 1.png');
-    background-position: right top;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 962px;
-    height: 964px; 
-
-} */
 .wrapper{
     display: flex;
     justify-content: space-between;
@@ -29,6 +20,11 @@ body{
     height: 90%; 
     position: relative;
 
+}
+
+.links{
+    display: flex;
+    align-items: center;
 }
 
 .links a{
@@ -48,33 +44,51 @@ body{
     border-radius: 50px;
     padding: 6px 36px;
     color: #fff;
+    
+}
+
+.login a{
+    border: 2px var(--border);
+    outline: 5px var(--border);
 }
 
 .home{
     display: flex;
     margin-top: 98px;
-    /* flex-basis: 70% ; */
+    flex-basis: 100% ;
     position: absolute;
     top: 60px;
+    justify-content: space-between;
 }
 
 .leftSide{
     flex-basis: 70%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .rightSide{
     display: flex;
     flex-direction: column;
     /* align-items: flex-end; */
-    flex-wrap: wrap;
-    flex-basis: 20%;
-    flex-grow: 2;
+    /* margin-left: 40px; */
+    align-self: flex-end;
+    flex: 20%;
+    /* flex-grow: 2; */
 }
 
-.rightSide h1{
-    margin-block-end: 0;
-    margin-inline-start: 0;
+.rightSide img{
+    width: 486px;
+    height: 320px;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+.message h1{
+  /* margin: 0 0 0 30px; */
+  /* text-align: center; */
+  font-size: 64px;
+  /* width: 490px; */
 }
 
 footer p{
